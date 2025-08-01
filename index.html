@@ -2,108 +2,230 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oscar Daganzo | Copywriting & Design Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
+      background-color: #f9f9f9;
       color: #333;
+      scroll-behavior: smooth;
     }
     header {
       background-color: #222;
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px 40px;
       text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
+    header h1 {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0 0 8px;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+    }
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+      opacity: 0.8;
+    }
+    nav {
+      margin-top: 15px;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    main {
+      padding: 140px 20px 60px;
+      max-width: 900px;
       margin: auto;
     }
-    h1, h2 {
+    section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 2rem;
+      margin-bottom: 20px;
       color: #222;
+      border-bottom: 3px solid #007ACC;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    ul li {
+      background-color: #e9f0f8;
+      margin-bottom: 12px;
+      padding: 14px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #007ACC;
+      box-shadow: 1px 1px 5px rgba(0,122,204,0.2);
     }
     .portfolio-item {
       background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 25px 30px;
+      margin-bottom: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease;
+    }
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+    }
+    .portfolio-item h3 {
+      margin-top: 0;
+      color: #007ACC;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+    }
+    .portfolio-item p {
+      font-size: 1.05rem;
+      line-height: 1.5;
+      margin-top: 8px;
+      color: #444;
     }
     .cta {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
     }
     .cta a {
       display: inline-block;
-      padding: 10px 20px;
-      background-color: #222;
+      background-color: #007ACC;
       color: white;
+      padding: 14px 28px;
+      border-radius: 30px;
       text-decoration: none;
-      border-radius: 5px;
+      font-weight: 700;
+      font-size: 1.15rem;
+      box-shadow: 0 5px 15px rgba(0,122,204,0.4);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .cta a:hover {
+      background-color: #005f9e;
+      box-shadow: 0 7px 20px rgba(0,95,158,0.6);
     }
     footer {
       background-color: #222;
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 25px 20px;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+    }
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+      .portfolio-item {
+        padding: 18px 20px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Oscar Daganzo</h1>
     <p>Professional Copywriter, Designer & Marketing Consultant</p>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm Oscar Daganzo, a creative professional based in the Netherlands with a passion for language, design and communication. I help businesses tell their stories clearly and effectively through copywriting, design and smart marketing strategies.
-    </p>
-
-    <h2>Services</h2>
-    <ul>
-      <li>Sales & Web Copywriting</li>
-      <li>Marketing Messages & Ads</li>
-      <li>Brand Identity & Graphic Design</li>
-      <li>Website Critique & Optimization</li>
-    </ul>
-
-    <h2>Portfolio</h2>
-
-    <div class="portfolio-item">
-      <h3>Filtered Water Company Ad</h3>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
       <p>
-        “Tap water tastes bad? Ours doesn’t. But we feel bad for you. With 100% filtered technology, our water always tastes pure. Sign up for our service — don't let your water taste bad ever again.”
+        Hi! I'm Oscar Daganzo, a passionate creative professional based in the Netherlands. I specialize in crafting clear, engaging copy and eye-catching designs that help businesses tell their stories effectively. With a mix of creativity and strategy, I turn ideas into impactful messages that resonate.
       </p>
-    </div>
-
-    <div class="portfolio-item">
-      <h3>Music Course Promotional Text</h3>
       <p>
-        “Ever watched legends on stage and thought ‘I wish it were me’? Don't wish to be them — become your best self. This course teaches you how to unleash your musical potential, step by step.”
+        Whether you need compelling sales copy, brand identity design, or marketing consulting, I’m here to help you stand out and connect with your audience.
       </p>
-    </div>
+    </section>
 
-    <div class="portfolio-item">
-      <h3>Design Consultancy Proposal</h3>
-      <p>
-        “Dear [Client], after reviewing your current designs, our team noticed key areas for improvement. We specialize in identifying and delivering what you didn’t even know you needed. Free assessment available — let us show you real results.”
-      </p>
-    </div>
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Sales & Web Copywriting — Engaging, clear, and persuasive text that converts.</li>
+        <li>Marketing Messages & Ad Campaigns — Powerful messages that get noticed.</li>
+        <li>Brand Identity & Graphic Design — Visual storytelling that defines your brand.</li>
+        <li>Website Critique & Optimization — Improve your site’s impact and usability.</li>
+      </ul>
+    </section>
 
-    <div class="cta">
-      <a href="mailto:oscarcmdesigner@gmail.com">Contact Me</a>
-    </div>
-  </section>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+
+      <div class="portfolio-item">
+        <h3>Filtered Water Company Ad</h3>
+        <p>
+          “Tap water tastes bad? Ours doesn’t. But we feel bad for you. With 100% filtered technology, our water always tastes pure. Sign up for our service — don't let your water taste bad ever again.”
+        </p>
+      </div>
+
+      <div class="portfolio-item">
+        <h3>Music Course Promotional Text</h3>
+        <p>
+          “Ever watched legends on stage and thought ‘I wish it were me’? Don't wish to be them — become your best self. This course teaches you how to unleash your musical potential, step by step.”
+        </p>
+      </div>
+
+      <div class="portfolio-item">
+        <h3>Design Consultancy Proposal</h3>
+        <p>
+          “Dear [Client], after reviewing your current designs, our team noticed key areas for improvement. We specialize in identifying and delivering what you didn’t even know you needed. Free assessment available — let us show you real results.”
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>If you want to boost your brand and improve your communication, let's talk!</p>
+      <div class="cta">
+        <a href="mailto:oscarcmdesigner@gmail.com" target="_blank" rel="noopener noreferrer">Send me an email</a>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Oscar Daganzo · oscarcmdesigner@gmail.com</p>
   </footer>
+
 </body>
 </html>
