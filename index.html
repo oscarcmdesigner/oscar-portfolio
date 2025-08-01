@@ -5,52 +5,99 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Oscar Daganzo | Copywriting & Design Services</title>
   <style>
+    :root {
+      --primary-color: #1a1a1a;
+      --accent-color: #e63946;
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --card-bg: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
     }
+
     header {
-      background-color: #222;
+      background-color: var(--primary-color);
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
     section {
-      padding: 40px 20px;
-      max-width: 800px;
+      padding: 50px 20px;
+      max-width: 900px;
       margin: auto;
     }
-    h1, h2 {
-      color: #222;
-    }
-    .portfolio-item {
-      background: white;
-      padding: 20px;
+
+    h2 {
+      font-size: 2rem;
       margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
     }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    .portfolio-item {
+      background: var(--card-bg);
+      padding: 25px;
+      margin-bottom: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px var(--shadow);
+    }
+
+    .portfolio-item h3 {
+      margin-top: 0;
+      color: var(--accent-color);
+    }
+
     .cta {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 40px;
     }
+
     .cta a {
       display: inline-block;
-      padding: 10px 20px;
-      background-color: #222;
+      padding: 12px 24px;
+      background-color: var(--accent-color);
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
     }
+
+    .cta a:hover {
+      background-color: #d62839;
+    }
+
     footer {
-      background-color: #222;
+      background-color: var(--primary-color);
       color: white;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 25px;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -63,7 +110,7 @@
   <section>
     <h2>About Me</h2>
     <p>
-      I'm Oscar Daganzo, a creative professional based in the Netherlands with a passion for language, design and communication. I help businesses tell their stories clearly and effectively through copywriting, design and smart marketing strategies.
+      I'm Oscar Daganzo, a creative professional based in the Netherlands with a passion for language, design, and communication. I help businesses tell their stories clearly and effectively through copywriting, design, and smart marketing strategies.
     </p>
 
     <h2>Services</h2>
@@ -79,9 +126,7 @@
     <div class="portfolio-item">
       <h3>Filtered Water Company Ad</h3>
       <p>
-        “Bad taste? Not with us.<br>
-        Our 100% filtered water always tastes clean — and honestly, we feel bad yours doesn't.<br>
-        Join us. You’ll never go back.”
+        “Bad taste? Not with us. Our 100% filtered water always tastes clean — and honestly, we feel bad yours doesn't. Join us. You’ll never go back.”
       </p>
     </div>
 
